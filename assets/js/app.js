@@ -1,4 +1,4 @@
-var svgWidth = 600;
+var svgWidth = 700;
 var svgHeight = 500;
 
 var margin = {
@@ -104,7 +104,7 @@ d3.csv("assets/data/data.csv").then(function(censusData) {
       .text("Smoking Rates");
 
     chartGroup.append("text")
-      .attr("transform", `translate(${(width / 2) - 25}, ${height + margin.top -15})`)
+      .attr("transform", `translate(${(width / 2) - 55}, ${height + margin.top -15})`)
       .attr("class", "axisText")
       .text("Income (US$/year)");
   }).catch(function(error) {
